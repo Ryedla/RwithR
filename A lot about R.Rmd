@@ -1,5 +1,6 @@
 ---
 title: "RwithR"
+author: "Rama Yedla"
 output: html_document
 ---
 
@@ -7,22 +8,39 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# A Comprehensive guide towards learning R
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+This document helps the practitioners as a guide to quikly search for a section. The sections can help in finding out the answers that you are looking for.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Parallely, for first time learners, this document serves as a source to go through different ways R can be used and the problems it can solve.
 
-```{r cars}
-summary(cars)
+## 1. Explore R Datasets
+
+You can see the list of datasets available after you type datasets::. You can assign the preferred dataset to a variable and start exploring
+
+```{r datasets}
+airmiles <- datasets::airmiles
 ```
 
-## Including Plots
+Datasets are stored in an R package. You can get the information about all the datasets available by doing the below
 
-You can also embed plots, for example:
+```{r datasets help}
+library(help = 'datasets')
+```
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+## 2. Vector Math
+
+R is a nice calculator, I use R extensively for my personal finance (which I suck at) and it is very helpful.
+
+Let's dive in and see what R can do...
+
+```{r pressure}
+#Addition
+5 + 3
+
+#SUbtraction
+5-3
+
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
