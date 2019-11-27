@@ -35,12 +35,11 @@ R is a nice calculator, I use R extensively for my personal finance (which I suc
 Let's dive in and see what R can do...
 
 ```{r pressure}
-#Addition
-5 + 3
-
-#SUbtraction
-5-3
-
+8 + 4 #Addition
+8 - 4 #Subtraction
+8 * 4 #Multiplication
+8 / 4 #Division
+8 ** 4 #Exponentiation
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
